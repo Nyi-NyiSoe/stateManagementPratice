@@ -5,9 +5,11 @@ import 'count.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
+    Get.put(Count());
     return SafeArea(
       child: Scaffold(
           appBar: AppBar(
@@ -26,8 +28,9 @@ class HomePage extends StatelessWidget {
           body: Column(
             children: [
               GetBuilder<Count>(
+                id: 'id1',
                 init: Count(),
-                builder: (_) {
+                builder: (value) {
                   return Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -40,7 +43,7 @@ class HomePage extends StatelessWidget {
                             child: Card(
                               child: Center(
                                   child: Text(
-                                'count1 = ' + _.count1.toString(),
+                                'count1 = ' + value.count1.toString(),
                                 style: TextStyle(fontSize: 20),
                                 textAlign: TextAlign.center,
                               )),
@@ -55,7 +58,7 @@ class HomePage extends StatelessWidget {
                             child: Card(
                               child: Center(
                                   child: Text(
-                                'count2 = ' + _.count2.toString(),
+                                'count2 = ' + value.count2.toString(),
                                 style: TextStyle(fontSize: 20),
                                 textAlign: TextAlign.center,
                               )),
@@ -70,7 +73,7 @@ class HomePage extends StatelessWidget {
                             child: Card(
                               child: Center(
                                   child: Text(
-                                'Result = ' + _.sum.toString(),
+                                'Result = ' + value.sum.toString(),
                                 style: TextStyle(fontSize: 20),
                                 textAlign: TextAlign.center,
                               )),
@@ -79,14 +82,23 @@ class HomePage extends StatelessWidget {
                         ),
                         ElevatedButton(
                             onPressed: () {
-                              _.icrement();
+                              value.icrement();
                             },
                             child: Text('Increase')),
                             
                       ]);
                 },
               ),
-              
+             GetBuilder<Count>(
+              id: 'id2',
+              builder: (_){
+              return Text(_.sum.toString());
+             }),
+              ElevatedButton(
+                            onPressed: () {
+                              Count.to.result(Count.to.count1, Count.to.count2);
+                            },
+                            child: Text('add')),
             ],
           )),
     );

@@ -10,11 +10,18 @@ class Count extends GetxController {
   void icrement() {
     count1++;
     count2++;
-    update();
+    // update(); // normal update
+     update(['id1']); //update after assigning id
   }
 
   void result(int count1, int count2) {
     sum.value = count1 + count2;
-    update();
+    update(['id1']);
+     update(['id2'],sum > 10);// id update with condition
   }
+  @override
+void onInit() {
+  print('hello world');
+  super.onInit();
+}
 }

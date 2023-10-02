@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:statemanagement/count.dart';
-import 'count.dart';
+
 
 class ResultPage extends StatelessWidget {
   const ResultPage({super.key});
