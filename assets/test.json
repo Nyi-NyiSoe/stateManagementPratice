@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Naruto Uzumaki",
+    "url":"https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png/revision/latest/scale-to-width-down/300?cb=20210223094656",
+    "age": 17,
+    "student": true,
+    "grades": [80, 75, 90],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "12345"
+    }
+  },
+  {
+    "name": "Sasuke Uchiha",
+    "url":"https://static.wikia.nocookie.net/naruto/images/2/21/Sasuke_Part_1.png/revision/latest/scale-to-width-down/1200?cb=20170716092103",
+    "age": 18,
+    "student": true,
+    "grades": [85, 88, 92],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "67890"}
+  },
+  {
+    "name": "Sakura Haruno",
+    "url":"https://static.wikia.nocookie.net/naruto/images/6/64/Sakura_Part_1.png/revision/latest/scale-to-width-down/1200?cb=20170726101444",
+    "age": 17,
+    "student": true,
+    "grades": [90, 92, 95],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "23456"
+    }
+  },
+  {
+    "name": "Kakashi Hatake",
+    "url":"https://staticg.sportskeeda.com/editor/2022/07/9384d-16582335313805-1920.jpg?w=840",
+    "age": 30,
+    "student": false,
+    "grades": [100,50,80],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "78901"}
+  },
+  {
+    "name": "Hinata Hyuga",
+    "url":"https://static.wikia.nocookie.net/naruto/images/9/97/Hinata.png/revision/latest?cb=20141010104729",
+    "age": 17,
+    "student": true,
+    "grades": [88, 85, 90],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "34567"
+    }
+  },
+  {
+    "name": "Shikamaru Nara",
+    "url":"https://static.wikia.nocookie.net/naruto/images/4/44/Shikamaru_Part_I.png/revision/latest/scale-to-width-down/1200?cb=20170419112314",
+    "age": 18,
+    "student": true,
+    "grades": [78, 80, 85],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "90123"
+    }
+  },
+  {
+    "name": "Ino Yamanaka",
+    "url":"https://static.wikia.nocookie.net/naruto/images/d/dd/Ino.png/revision/latest/scale-to-width-down/1200?cb=20170622102745",
+    "age": 17,
+    "student": true,
+    "grades": [82, 87, 88],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "45678"
+    }
+  },
+  {
+    "name": "Rock Lee",
+    "url":"https://static.wikia.nocookie.net/naruto/images/9/97/Rock_Lee_Part_I.png/revision/latest?cb=20181229065526",
+    "age": 17,
+    "student": true,
+    "grades": [75, 78, 80],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "12345"
+    }
+  },
+  {
+    "name": "Neji Hyuga",
+    "url":"https://static.wikia.nocookie.net/naruto/images/7/7e/Neji_Part_I.png/revision/latest/scale-to-width-down/1200?cb=20160118081119",
+    "age": 18,
+    "student": true,
+    "grades": [85, 90, 92],
+    "address":{
+      "city": "Hidden Leaf Village",
+    "zipCode": "78901"
+    }
+  },
+  {
+    "name": "Tenten",
+    "url":"https://static.wikia.nocookie.net/naruto/images/d/da/Tenten_Part_1.png/revision/latest/scale-to-width-down/1200?cb=20180510203032",
+    "age": 17,
+    "student": true,
+    "grades": [80, 82, 85],
+   "address":{
+    "city": "Hidden Leaf Village",
+    "zipCode": "23456"
+   }
+  }
+]
