@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:statemanagement/contact.dart';
 import 'package:statemanagement/json_provider.dart';
 import 'package:statemanagement/profile_card.dart';
 
@@ -11,7 +12,16 @@ class HomePage extends ConsumerWidget {
     final jsonData = ref.watch(jsonProvider);
     return SafeArea(
         child: Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context){
+              return ContactPage();
+            }));
+
+          }, child: Text('Contact'))
+        ],
+      ),
       body: Column(
         children: [
           jsonData.when(data: (data) {
